@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<restful-list>
+	<restful>
+		<parent>admin</parent>
+		<rest-name>restapps</rest-name>
+		<method>get,post</method>
+		<version>one</version>
+		<table>restapp</table>
+	</restful>
+</restful-list>

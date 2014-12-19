@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<something-else-entirely>
+	<proxool>
+		<alias>springProxoolMaster</alias>
+
+		<driver-url>jdbc:mysql://172.16.30.98:3306/appstore_db?characterEncoding=utf8</driver-url>
+		
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<statistics>1m,15m,1d</statistics>
+		<driver-properties>
+			<property name="user" value="root" />
+			
+			<property name="password" value="root" />
+			
+		</driver-properties>
+		<house-keeping-sleep-time>60000</house-keeping-sleep-time>
+		<maximum-active-time>1800000</maximum-active-time>
+		<prototype-count>3</prototype-count>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>2</minimum-connection-count>
+		<test-before-use>true</test-before-use>
+		<test-after-use>true</test-after-use>
+		<house-keeping-test-sql>SELECT 1</house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>springProxoolSlave</alias>
+
+		<driver-url>jdbc:mysql://172.16.30.98:3306/appstore_db?characterEncoding=utf8</driver-url>
+		
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<statistics>1m,15m,1d</statistics>
+		<driver-properties>
+			<property name="user" value="root" />
+			
+			<property name="password" value="root" />
+			
+		</driver-properties>
+		<house-keeping-sleep-time>60000</house-keeping-sleep-time>
+		<maximum-active-time>1800000</maximum-active-time>
+		<prototype-count>3</prototype-count>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>2</minimum-connection-count>
+		<test-before-use>true</test-before-use>
+		<test-after-use>true</test-after-use>
+		<house-keeping-test-sql>SELECT 1</house-keeping-test-sql>
+	</proxool>
+    <proxool>
+        <alias>quartz</alias>
+
+        <driver-url>jdbc:mysql://172.16.30.98:3306/quartz?characterEncoding=utf8</driver-url>
+        
+        <driver-class>com.mysql.jdbc.Driver</driver-class>
+        <statistics>1m,15m,1d</statistics>
+        <driver-properties>
+            <property name="user" value="root" />
+            
+            <property name="password" value="root" />
+            
+        </driver-properties>
+        <house-keeping-sleep-time>60000</house-keeping-sleep-time>
+        <maximum-active-time>1800000</maximum-active-time>
+        <prototype-count>3</prototype-count>
+        <maximum-connection-count>10</maximum-connection-count>
+        <minimum-connection-count>2</minimum-connection-count>
+        <test-before-use>true</test-before-use>
+        <test-after-use>true</test-after-use>
+        <house-keeping-test-sql>SELECT 1</house-keeping-test-sql>
+    </proxool>
+</something-else-entirely>
